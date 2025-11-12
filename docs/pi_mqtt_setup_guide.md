@@ -94,7 +94,7 @@ sudo systemctl status mosquitto
 awk 'BEGIN{print "const char ca_cert[] PROGMEM = R\"EOF("} {print} END{print ")EOF\";"}' \
   /etc/mosquitto/certs/ca.crt > ca_cert.h
 ```
-Copy ca_cert.h into your ESP32 project folder and include:
+Copy ca_cert.h into your ESP32 project folder and include: (MUST)
 ```bash
 #include "ca_cert.h"
 ```
